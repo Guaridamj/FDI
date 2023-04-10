@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+    color: white;
+    background-image: url("https://www.xtrafondos.com/wallpapers/resized/playstation-abstracto-8359.jpg?s=large");
+		background-repeat: repeat;
+    background-size: 20%;
+  }
+  
+  header {
+    font-size: xx-large;
+    padding: 20px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  
+  nav {
+    background-color: rgba(0, 0, 0, 0.824);
+    color: #fff;
+    font-size:x-large;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  nav a {
+  }
+  
+  main {
+    background-color: black
+    padding: 20px;
+  }
+  
+  section {
+    background-color: rgba(39, 39, 40, 0.74);
+    margin-bottom: 40px;
+    font-size: larger;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    background-color: black
+    font-size: larger;
+    color: white;
+  }
+  
+  ul, ol {
+    background-color: black
+    font-size: larger;
+    color: white;
+  }
+  
+  footer {
+    
+    background-color: rgb(159, 180, 239);
+  
