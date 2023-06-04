@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dudas TEC</title>
+</head>
+
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Chivo+Mono:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+<body>
+  <header>
+    <a href="index.html">
+      <img src="https://i.imgur.com/3zsDzG4.png" alt="Encabezado" style="width: 100%; border-radius: 10px;">
+    </a>
+  </header>
+  
+<div id="contenedor">
+  <div id="header">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="Tips.html">Tips</a></li>
+      <li><a href="QandA.html">Q & A</a></li>
+      <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+</div>
+
+<main>
+  <section id="AcercaDe">
+    <h2>Bienvenid@s a Dudas TEC</h2>
+    <p>Este blog está diseñado especialmente para la comunidad del TEC Campus Querétaro. Nuestro objetivo principal es brindar contenido valioso y útil para los estudiantes, a través de una amplia variedad de temas que incluyen información sobre eventos, actividades y oportunidades en el campus, así como consejos sobre cómo aprovechar al máximo la vida universitaria.</p>
+
+    <div style="display: flex; align-items: center;">
+      <p style="flex: 1; transform: rotate(0deg); font-size: larger; text-align: center;">
+        Además, nos enfocaremos en compartir "tips" y estrategias que ayuden a los estudiantes a enfrentar los desafíos típicos de la vida universitaria. Desde cómo administrar mejor el tiempo, hasta encontrar el equilibrio entre el trabajo académico y las actividades extracurriculares, y superar el estrés, entre otros temas.<br>
+        <span style="display: block; font-weight: bold; margin-bottom: 10px;">En Dudas Tec nos comprometemos a ofrecer contenido relevante, actualizado y de calidad, para que nuestros lectores puedan sacar el máximo provecho de su experiencia universitaria.</span>
+        <span style="display: block; margin-bottom: 10px;">¡Únete a nosotros y juntos descubramos cómo hacer de tu vida universitaria una experiencia inolvidable!</span>
+      </p>
+      <img src="https://conecta.tec.mx/sites/default/files/styles/header_full/public/2022-11/inauguracion-nuevas-residencias-tec-campus-queretaro-portada.jpg?itok=EO4hdRYr" width="600" style="float: right; margin-left: 20px; transform: rotate(0deg); border: 5px solid black; border-radius: 10px;">
+    </div>
+  </section>
+
+  <footer style="text-align: center; padding: 20px; background-color: #f2f2f2;">
+    &copy; 2023 Dudas Tec - Todos los derechos reservados.
+  </footer>
+</main>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    var currentLocation = window.location.href;
+
+    var menuItems = document.querySelectorAll('#header a');
+
+    menuItems.forEach(function(item) {
+      if (item.href === currentLocation) {
+        item.classList.add('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

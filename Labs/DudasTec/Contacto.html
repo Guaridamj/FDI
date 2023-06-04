@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dudas TEC - Contacto</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Chivo+Mono:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img src="https://i.imgur.com/3zsDzG4.png" alt="Encabezado" style="width: 100%; border-radius: 10px;">
+    </a>
+  </header>
+
+  <div id="contenedor">
+    <div id="header">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Tips.html">Tips</a></li>
+        <li><a href="QandA.html">Q & A</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <section id="Giro" style="text-align: center;">
+      <h1 style="text-align: center;">Ponte en contacto con nosotros:</h1>
+      <h1 style="text-align: center;">Síguenos en nuestras redes sociales:</h1>
+  
+      <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+        <div style="text-align: center; margin-right: 20px;">
+          <a href="https://www.instagram.com/dudas_tec/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/800px-Instagram-Icon.png" alt="Instagram" style="width: 80px;">
+          </a>
+          <p>Instagram</p>
+        </div>
+        <div style="text-align: center; margin-right: 20px;">
+          <a href="https://www.facebook.com/profile.php?id=100092339097002" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook" style="width: 80px;">
+          </a>
+          <p>Facebook</p>
+        </div>
+      </div>
+  
+      <h2 style="text-align: center;">Contacto de Editores</h2>
+  
+      <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+        <div style="text-align: center; margin-right: 20px;">
+          <img src="ruta_imagen_editor1" alt="Editor 1" style="width: 80px;">
+          <p>Juan Mendoza Haro</p>
+          <p><a href="mailto:A01705347@tec.mx">A01705347@tec.mx</a></p>
+        </div>
+        <div style="text-align: center; margin-right: 20px;">
+          <img src="ruta_imagen_editor2" alt="Editor 2" style="width: 80px;">
+          <p>Pablo Alcántar García</p>
+          <p><a href="mailto:A01704687@tec.mx">A01704687@tec.mx</a></p>
+        </div>
+        <div style="text-align: center;">
+          <img src="ruta_imagen_editor3" alt="Editor 3" style="width: 80px;">
+          <p>Ross Zamorano Gómez</p>
+          <p><a href="mailto:A01701562@tec.mx">A01701562@tec.mx</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  
+
+  <footer style="text-align: center; padding: 20px; background-color: #f2f2f2;">
+    &copy; 2023 Dudas Tec - Todos los derechos reservados.
+  </footer>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var currentLocation = window.location.href;
+
+      var menuItems = document.querySelectorAll('#header a');
+
+      menuItems.forEach(function(item) {
+        if (item.href === currentLocation) {
+          item.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

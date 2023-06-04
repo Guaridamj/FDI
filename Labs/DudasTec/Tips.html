@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dudas TEC - Tips</title>
+</head>
+
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Chivo+Mono:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+<body>
+  <header>
+    <a href="index.html">
+      <img src="https://i.imgur.com/3zsDzG4.png" alt="Encabezado" style="width: 100%; border-radius: 10px;">
+    </a>
+  </header>
+  
+
+<div id="contenedor">
+  <div id="header">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="Tips.html">Tips</a></li>
+      <li><a href="QandA.html">Q & A</a></li>
+      <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <main>
+      <section id="Procedimiento">
+        <h2>Everyday Tips:</h2>
+
+        <p>El rally de Italia es una competición automovilística que se celebra cada año en la isla de Cerdeña, y tuve la suerte de estar allí en persona. La ciudad de Alghero fue la sede de la carrera, lo que hizo que todo fuera mucho más emocionante para mí y los demás espectadores. </p>
+
+
+        <div style="display: flex; align-items: center;">
+            <img src="https://i.imgur.com/yzIXPQR.jpg" width="600" style="float: left; margin-right: 20px; transform: rotate(0deg);">
+            <p style="transform: rotate(0deg); font-size:larger; text-align:center;">Fue muy impresionante tener la oportunidad de ver los coches por toda la ciudad, incluso algunos conductores iban a gran velocidad y se podían escuchar los motores resonando en toda la ciudad.</p>
+          </div>
+
+          <div style="display: flex; align-items: center;">
+            <p style="flex: 1; transform: rotate(0deg);  font-size:larger; text-align:center;">También hubo una exposición de coches muy impresionante. Recuerdo que tuve la oportunidad de ver un Lamborghini que era utilizado como coche de policía, algo realmente impresionante.</p>
+            <img src="https://i.imgur.com/LSY4ZLD.jpg" width="600" style="float: right; margin-left: 20px; transform: rotate(0deg);">
+         </div> 
+
+         <div style="display: flex; align-items: center;">
+            <img src="https://i.imgur.com/WQ80pFN.jpg" width="600" style="float: left; margin-right: 20px; transform: rotate(0deg);">
+            <p style="transform: rotate(0deg); font-size:larger; text-align:center;">Para mí lo que más me sorprendio fue ver los autos conduciendo por las calles, el sonido era increíble y muy alto, de verdad fue una oportunidad única.</p>
+          </div>
+
+          <div style="display: flex; align-items: center;">
+            <p style="flex: 1; transform: rotate(0deg);  font-size:larger; text-align:center;">
+                Tambien fue muy interesante ver a los mecánicos y a los conductores hablar sobre los autos y como mejorarlos para la carrera.
+                </p>
+            <img src="https://i.imgur.com/hrkzJ54.jpg" width="600" style="float: right; margin-left: 20px; transform: rotate(0deg);">
+         </div> 
+
+          <div style="display: flex; align-items: center;">
+            <p style="flex: 1; transform: rotate(0deg);  font-size:larger; text-align:center;">En general es una experiencia que siempre voy a recordar, y que deseo algun día poder repetir.</p>
+         </div> 
+
+      </section>
+
+      <footer style="text-align: center; padding: 20px; background-color: #f2f2f2;">
+        &copy; 2023 Dudas Tec - Todos los derechos reservados.
+      </footer>
+    </main>
+
+
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+        var currentLocation = window.location.href;
+    
+        var menuItems = document.querySelectorAll('#header a');
+    
+        menuItems.forEach(function(item) {
+          if (item.href === currentLocation) {
+            item.classList.add('active');
+          }
+        });
+      });
+    </script>
+
+    </body>
+</html>
