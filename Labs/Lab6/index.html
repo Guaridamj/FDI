@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botones, botones, botones!</title>
+</head>
+
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Chivo+Mono:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+<body>
+
+
+
+  <main>
+    <section id="AcercaDe" style="text-align: center;">
+      <h2 style="font-size: 32px;">Los tres estados en los que vive mi perrita Helga</h2>
+      <div>
+        <img id="boton1" src="https://i.imgur.com/GP4aoAr.png" alt="Botón 1" style="cursor: pointer; width: 150px;">
+        <img id="boton2" src="https://i.imgur.com/k63u5CH.png" alt="Botón 2" style="cursor: pointer; width: 150px;">
+        <img id="boton3" src="https://i.imgur.com/CTNIBzS.png" alt="Botón 3" style="cursor: pointer; width: 150px;">
+      </div>
+
+      <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <img id="imagen" src="https://i.imgur.com/7AWhbog.jpg" width="600" style="border: 5px solid black; border-radius: 10px;">
+      </div>
+    </section>
+
+    <footer style="text-align: center; padding: 20px; background-color: #f2f2f2;">
+      &copy; 2023 Helga & Juan - Todos los derechos reservados.
+    </footer>
+  </main>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var currentLocation = window.location.href;
+
+      var menuItems = document.querySelectorAll('#header a');
+
+      menuItems.forEach(function(item) {
+        if (item.href === currentLocation) {
+          item.classList.add('active');
+        }
+      });
+
+      var boton1 = document.getElementById('boton1');
+      boton1.addEventListener('click', function() {
+        document.getElementById('imagen').src = 'https://i.imgur.com/JUBLH6V.jpg';
+      });
+
+      var boton2 = document.getElementById('boton2');
+      boton2.addEventListener('click', function() {
+        document.getElementById('imagen').src = 'https://i.imgur.com/VH7MWwj.jpg';
+      });
+
+      var boton3 = document.getElementById('boton3');
+      boton3.addEventListener('click', function() {
+        document.getElementById('imagen').src = 'https://i.imgur.com/c58FgBi.jpg';
+      });
+    });
+  </script>
+
+</body>
+
+</html>
