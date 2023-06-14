@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía de Vuelo</title>
+</head>
+
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Chivo+Mono:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+<body>
+  <header>
+    <a href="index.html">
+      <img src="https://i.imgur.com/cHNPpd0.png" alt="Encabezado" style="width: 100%;height: 200px; border-radius: 10px;">
+    </a>
+  </header>
+  
+<div id="contenedor">
+  <div id="header">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="GoogleFlights.html">Google Flights</a></li>
+      <li><a href="skiplagged.html">Skiplagged</a></li>
+    </ul>
+  </div>
+</div>
+
+<main>
+  <section id="Giro">
+    <h2>Skiplagged</h2>
+    <ul>
+      <li><strong style="color: #E1262F; font-weight: bold;">Pregunta: ¿Qué es Skiplagged?</strong></li>
+      <li style="margin-left: 20px;">Respuesta: Skiplagged es una herramienta en línea que te ayuda a encontrar vuelos baratos utilizando la estrategia de "Hidden City" (ciudad oculta).</li>
+      <li><strong style="color: #E1262F; font-weight: bold;">Pregunta: ¿Cómo funciona Skiplagged?</strong></li>
+      <li style="margin-left: 20px;">Respuesta: Skiplagged encuentra vuelos con escalas que son más económicos que los vuelos directos. Reservas un vuelo con escala en la ciudad que deseas visitar, pero tu destino final es la escala misma. Simplemente te bajas en la escala y no tomas el tramo final del vuelo.</li>
+      <li><strong style="color: #E1262F; font-weight: bold;">Pregunta: ¿Por qué es más barato utilizar Skiplagged?</strong></li>
+      <li style="margin-left: 20px;">Respuesta: Los vuelos con escalas suelen tener tarifas más económicas que los vuelos directos. Skiplagged aprovecha esto al reservar vuelos con escalas y quedarse en la ciudad de la escala, en lugar de volar hasta el destino final.</li>
+      <li><strong style="color: #E1262F; font-weight: bold;">Pregunta: ¿Existen riesgos al utilizar Skiplagged?</strong></li>
+      <li style="margin-left: 20px;">Respuesta: Sí, hay riesgos asociados con el uso de Skiplagged. Algunas aerolíneas no aprueban la estrategia de "Hidden City" y pueden tomar medidas enérgicas, como cancelar tu boleto o prohibirte futuros vuelos. Además, esta estrategia no es efectiva para vuelos de regreso.</li>
+      <li><strong style="color: #E1262F; font-weight: bold;">Pregunta: ¿Cuál es el beneficio de utilizar Skiplagged?</strong></li>
+      <li style="margin-left: 20px;">Respuesta: El principal beneficio de Skiplagged es que te permite encontrar vuelos más económicos y ahorrar dinero en tus viajes. Puedes aprovechar las tarifas de vuelos con escalas y visitar la ciudad de la escala como destino final.</li>
+      <li><strong style="color: #E1262F; font-weight: bold;">Pregunta: ¿Skiplagged es legal?</strong></li>
+      <li style="margin-left: 20px;">Respuesta: Aunque Skiplagged es una herramienta legítima, la estrategia de "Hidden City" no es respaldada por todas las aerolíneas y puede violar los términos y condiciones de algunas compañías. Es importante estar consciente de los posibles riesgos y limitaciones antes de utilizarla.</li>
+      <li><strong style="color: #E1262F; font-weight: bold;">Pregunta: ¿Qué debo considerar antes de utilizar Skiplagged?</strong></li>
+      <li style="margin-left: 20px;">Respuesta: Antes de utilizar Skiplagged, debes considerar los posibles riesgos, como la posibilidad de que tu boleto sea cancelado o enfrentar restricciones por parte de las aerolíneas. Además, esta estrategia no es recomendada para vuelos de regreso.</li>
+      <br>
+      <li style="margin-left: 20px;">Esperamos que estas preguntas y respuestas te hayan brindado una mejor comprensión de cómo funciona Skiplagged y cómo puedes aprovecharlo para encontrar vuelos más económicos en tus viajes. Recuerda siempre evaluar los riesgos y leer los términos y condiciones antes de utilizar este tipo de estrategias. ¡Felices viajes!</li>
+
+    </ul>
+  </section>
+</main>
+
+
+<footer style="text-align: center; padding: 20px; background-color: #f2f2f2;">
+  &copy; 2023 Guía de Vuelo - Todos los derechos reservados.
+</footer>
+
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  var currentLocation = window.location.href;
+
+  var menuItems = document.querySelectorAll('#header a');
+
+  menuItems.forEach(function(item) {
+    if (item.href === currentLocation) {
+      item.classList.add('active');
+    }
+  });
+});
+</script>
+
+</body>
+</html>

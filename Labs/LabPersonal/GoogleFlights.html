@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía de Vuelo</title>
+</head>
+
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Chivo+Mono:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+<body>
+  <header>
+    <a href="index.html">
+      <img src="https://i.imgur.com/cHNPpd0.png" alt="Encabezado" style="width: 100%;height: 200px; border-radius: 10px;">
+    </a>
+  </header>
+  
+<div id="contenedor">
+  <div id="header">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="GoogleFlights.html">Google Flights</a></li>
+      <li><a href="skiplagged.html">Skiplagged</a></li>
+    </ul>
+  </div>
+</div>
+
+<main>
+
+
+  <section id="Procedimiento">
+    <h2>Google Flights</h2>
+
+    <div style="display: flex; align-items: center;">
+      <img src="https://i.imgur.com/NpMpuIe.png" width="600" style="float: left; margin-right: 20px; transform: rotate(0deg);">
+      <p style="transform: rotate(0deg); font-size:larger; text-align:center;">
+        1. Primero vamos a ir a la página de Google Flights.
+      </p>
+    </div>
+
+    <div style="display: flex; align-items: center;">
+      <p style="flex: 1; transform: rotate(0deg); font-size:larger; text-align:center;">
+        2. Ahora, vamos a seleccionar las fechas arpoximadas en las que deseamos ir, por ejemplo elejimos una semana en el mes de septiembre.
+      </p>
+      <img src="https://i.imgur.com/NIzxKF5.png" width="600" style="float: right; margin-left: 20px; transform: rotate(0deg);">
+    </div> 
+
+    <div style="display: flex; align-items: center;">
+      <img src="https://i.imgur.com/TTWuXvu.png" width="600" style="float: left; margin-right: 20px; transform: rotate(0deg);">
+      <p style="transform: rotate(0deg); font-size:larger; text-align:center;">
+        3. Una vez que carge la página, debemos hacer click en la busqueda de cuadricula de fechas.
+      </p>
+    </div>
+
+    <div style="display: flex; align-items: center;">
+      <p style="flex: 1; transform: rotate(0deg); font-size:larger; text-align:center;">
+        4. Como podemos ver, nos aparece las fechas que hemos elegido, pero no nos vamos a quedar con esas.
+      </p>
+      <img src="https://i.imgur.com/k5vW7v6.png" width="600" style="float: right; margin-left: 20px; transform: rotate(0deg);">
+    </div> 
+
+    <div style="display: flex; align-items: center;">
+      <img src="https://i.imgur.com/Wza9Xgp.png" width="600" style="float: left; margin-right: 20px; transform: rotate(0deg);">
+      <p style="transform: rotate(0deg); font-size:larger; text-align:center;">
+        5. En este caso, nos conviene más elegir la fecha del 17 de septiembre al 21 de septiembre, ya que están $3,475 pesos más baratos!
+      </p>
+    </div> 
+
+    <div style="display: flex; align-items: center;">
+      <p style="flex: 1; transform: rotate(0deg); font-size:larger; text-align:center;">
+        6. Y listo, ya tienes boletos más baratos y en una fecha muy similar, es muy importante explorar bien la cuadrícula ya que siempre puedes encontrar mejores precios si juegas un poco con las fechas!
+      </p>
+      <img src="https://i.imgur.com/QaosPTL.png" width="600" style="float: right; margin-left: 20px; transform: rotate(0deg);">
+    </div> 
+
+  <footer style="text-align: center; padding: 20px; background-color: #f2f2f2;">
+    &copy; 2023 Dudas Tec - Todos los derechos reservados.
+  </footer>
+</main>
+
+
+<footer style="text-align: center; padding: 20px; background-color: #f2f2f2;">
+  &copy; 2023 Guía de Vuelo - Todos los derechos reservados.
+</footer>
+</main>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    var currentLocation = window.location.href;
+
+    var menuItems = document.querySelectorAll('#header a');
+
+    menuItems.forEach(function(item) {
+      if (item.href === currentLocation) {
+        item.classList.add('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

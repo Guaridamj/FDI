@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía de Vuelo</title>
+</head>
+
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Chivo+Mono:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+<body>
+  <header>
+    <a href="index.html">
+      <img src="https://i.imgur.com/cHNPpd0.png" alt="Encabezado" style="width: 100%;height: 200px; border-radius: 10px;">
+    </a>
+  </header>
+  
+<div id="contenedor">
+  <div id="header">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="GoogleFlights.html">Google Flights</a></li>
+      <li><a href="skiplagged.html">Skiplagged</a></li>
+    </ul>
+  </div>
+</div>
+
+<main>
+  <section id="AcercaDe">
+    <h2>¿Quieres saber como obtener vuelos baratos?</h2>
+    <p>Si estás buscando la manera de ahorrar dinero en tus próximas aventuras, has llegado al lugar adecuado. Aquí te presentaremos dos métodos efectivos para obtener vuelos económicos sin comprometer la calidad de tu experiencia de viaje.</p>
+
+    <div style="display: flex; align-items: center;">
+      <p style="flex: 1; transform: rotate(0deg); font-size: larger; text-align: center;">
+        En un mundo en constante movimiento, viajar se ha convertido en una experiencia emocionante y enriquecedora. Sin embargo, el costo de los vuelos puede ser un obstáculo para muchos viajeros. Afortunadamente, con la ayuda de Google Flights y Skiplagged, tendrás a tu disposición dos aliados confiables para encontrar vuelos económicos sin comprometer la calidad de tu viaje.<br>
+        <br>
+        <span style="display: block; font-weight: bold; margin-bottom: 10px;">En nuestra página, te guiaremos a través de dos métodos efectivos para obtener vuelos baratos utilizando estas plataformas líderes en la industria de los viajes.</span>
+      </p>
+      <img src="https://theplanetd.com/images/best-travel-blogs-8.jpg" width="600" style="float: right; margin-left: 20px; transform: rotate(0deg); border: 5px solid black; border-radius: 10px;">
+    </div>
+  </section>
+
+  <footer style="text-align: center; padding: 20px; background-color: #f2f2f2;">
+    &copy; 2023 Guía de Vuelo - Todos los derechos reservados.
+  </footer>
+</main>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    var currentLocation = window.location.href;
+
+    var menuItems = document.querySelectorAll('#header a');
+
+    menuItems.forEach(function(item) {
+      if (item.href === currentLocation) {
+        item.classList.add('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
